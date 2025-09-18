@@ -68,7 +68,9 @@ First, clone the repository and install the required packages.
 ```bash
 git clone https://github.com/yyfz/Pi3.git
 cd Pi3
-pip install -r requirements.txt
+# pip install -r requirements.txt
+uv pip install -r requirements.txt
+uv pip install -e . # for importing as pi3
 ```
 
 ### 2\. Run Inference from Command Line
