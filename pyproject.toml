@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pi3"
+# If you don't want to maintain a version here, see the setuptools_scm option below.
+version = "0.0.0"
+description = "π^3: Scalable permutation-equivariant visual geometry learning"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Yifan Wang" },
+  { name = "Jianjun Zhou" },
+  { name = "Haoyi Zhu" },
+  { name = "Tong He" }
+]
+keywords = ["3D vision", "visual geometry", "camera pose", "point cloud", "permutation-equivariant"]
+
+# Leave empty for now; see the note right below about syncing with requirements.txt
+dependencies = []
+
+[project.urls]
+Homepage = "https://yyfz.github.io/pi3/"
+Repository = "https://github.com/yyfz/Pi3"
+Paper = "https://arxiv.org/abs/2507.13347"
+
+[tool.setuptools]
+# Use the package dir that already exists in the repo.
+packages = ["pi3"]
